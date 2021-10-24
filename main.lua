@@ -1,3 +1,4 @@
+
 --Cracked By Me -- Liam
 --Discord:Liam!#6969
 local L_1_ = "t"
@@ -30,7 +31,7 @@ end
 game.StarterGui:SetCore(
     "SendNotification",
     {
-	Title = "Lx12-Liam!#6969",
+	Title = "Lx12",
 	Text = "Lx12, Whitelisted.",
 	Icon = "rbxthumb://type=Avatar&id=953073945&w=150&h=150"
 }
@@ -41,7 +42,7 @@ local L_5_ = L_4_:NewTab("Aimlock")
 local L_6_ = L_5_:NewSection("Lx12")
 L_6_:NewButton(
     "Aimlock",
-    "Beam niggas down",
+    "Beam them bitches down",
     function()
 	getgenv().AimPart = "HumanoidRootPart"
 	getgenv().AimlockKey = "q"
@@ -1109,12 +1110,12 @@ L_19_:NewToggle(
 	L_18_.Boxes = L_204_arg0
 end
 )
-L_6_:NewLabel("credits to flash.#0011 and evan (blood)")
+L_6_:NewLabel("Thanks For Using - Made By Liam!#6969")
 local L_20_ = L_4_:NewTab("Animation Changer")
 local L_21_ = L_20_:NewSection("Lx12")
 L_21_:NewButton(
     "Zombie And OldSchool",
-    "you are cool",
+    "Get good",
     function()
 	local L_205_ = game.Players.LocalPlayer.Character.Animate
 	L_205_.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
@@ -1127,7 +1128,7 @@ end
 )
 L_21_:NewButton(
     "Zombie And Mage",
-    "you are cool",
+    "Poor",
     function()
 	local L_206_ = game.Players.LocalPlayer.Character.Animate
 	L_206_.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
@@ -1138,3 +1139,25 @@ L_21_:NewButton(
 	L_206_.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
 end
 )
+
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {
+	"Thanks For Using!",
+}
+
+local TimeBetweenNotifications = 999999  --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+while true do
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+		
+		StarterGui:SetCore("SendNotification", {
+			Title = "Lx12",
+			Text = Notification,
+			Duration = 5
+		})
+		
+		wait(TimeBetweenNotifications)
+	end
+end
